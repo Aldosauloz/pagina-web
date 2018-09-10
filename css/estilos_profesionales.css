@@ -1,0 +1,70 @@
+* {
+  margin:0;
+  padding:0;
+}
+body{
+  background:#6e6e6e;
+}
+header, .main, footer{
+  width:90%;
+  max-width:1000px;
+  margin:20px auto; /* centrar el contenido*/
+}
+header nav{
+  background:#e50000;
+  overflow: hidden; /* oculta contenido que sobrepasa el contenedor*/
+}
+nav li ul {
+display: none; /*este quita los sub menus*/
+
+}
+header nav ul{
+ list-style: none;
+}
+nav li:hover >ul {
+  display: block;
+  background:#1c1c1c;
+  padding: 10px 15px;
+}
+header nav ul li{
+  float: left;
+}
+header nav ul li a{
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+  text-decoration:none;
+}
+header nav ul li a:hover{
+  background:#000000;
+}
+.main .articles {
+  width: 68.5%;
+  margin-right: 1.5%;
+  float: left;  /*el contenido se va a la izquierda*/
+
+}
+.main .articles article{
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+aside{
+  width: 22%;
+  background:#000;
+  color: #fff;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+   /* con esta propiedad pone el side bar a la izquierda*/
+}
+footer{
+  background: #000;
+  color: #fff;
+  clear: both; /*limpia los float:left y da una separacion*/
+text-align: center;
+}
+nav li ul{
+  position: absolute;
+  min-width: 140px;
+}
